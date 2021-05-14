@@ -105,11 +105,13 @@ if (!modalMailMobile) {} else {
 var modalReviewClose = document.querySelector('.modal__review-exit');
 var modalReview = document.querySelector('.modal__review');
 var modalReviewContainer = document.querySelector('.modal__review-container');
+var modalReviewSend = document.querySelector('.modal__review--send');
 
 if (!modalReviewClose) {} else {
   modalReviewClose.addEventListener('click', function () {
     body.classList.remove('no-scroll');
     modalReview.classList.add('modal__review--closed');
+    modalReviewSend.classList.remove('modal__review--send-active');
   });
   modalReviewContainer.addEventListener('click', function () {
     event.stopPropagation();
@@ -117,6 +119,7 @@ if (!modalReviewClose) {} else {
   modalReview.addEventListener('click', function () {
     body.classList.remove('no-scroll');
     modalReview.classList.add('modal__review--closed');
+    modalReviewSend.classList.remove('modal__review--send-active');
   });
 } // SMOOTH SCROOL TO TOP FROM BOTTOM
 
@@ -194,6 +197,7 @@ function validateForms(selector, rules) {
       modalFinish.classList.add('modal__finish--active');
       body.classList.add('no-scroll');
       modalContainer.classList.add('modal__container--no-scroll');
+      modalReviewSend.classList.add('modal__review--send-active');
     }
   });
 }
