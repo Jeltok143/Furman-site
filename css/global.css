@@ -1,1 +1,49 @@
-@font-face{font-family:Raleway;src:url(../fonts/Raleway-Medium.woff2) format("woff2");font-weight:500;font-display:swap;font-style:normal}@font-face{font-family:Raleway;src:url(../fonts/Raleway-Bold.woff2) format("woff2");font-weight:700;font-display:swap;font-style:normal}@font-face{font-family:Inter;src:url(../fonts/Inter-Regular.woff2) format("woff2");font-weight:400;font-display:swap;font-style:normal}html{box-sizing:border-box;font-size:62.5%;scroll-behavior:smooth}*,::after,::before{box-sizing:inherit}body{margin:0;font-family:Raleway,sans-serif;background-color:var(--color-white);font-feature-settings:'pnum' on,'lnum' on}img{max-width:100%}a{text-decoration:none;outline:0}ul{list-style:none;padding:0}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/../fonts/Raleway-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/../fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--color-white);
+  font-feature-settings: 'pnum' on, 'lnum' on; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+/*# sourceMappingURL=global.css.map */
