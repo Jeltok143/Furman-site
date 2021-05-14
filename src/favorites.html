@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Furman</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  @include('partials/header.html') 
+  @include('partials/call-widget.html')
+  @include('partials/modal-call-catalog.html')
+  @include('partials/modal-mailing.html')
+  @include('partials/modal-search.html')
+
+  <div class="favorites">
+    <div class="container">
+      <div class="favorites__inner">
+        <div class="favorites__top">
+          <h1 class="page__title">Избранное</h1>
+          <button class="favorites__delete favorites__delete--all">Очистить избранное</button>
+        </div>
+
+        <div class="favorites__cards">
+
+          <div class="favorites__card-item">
+            <div class="favorite__card-img" style="background-image: url(img/favorites/ph-1.png);">
+              <button class="favorite__delete-btn"></button>
+              <div class="favourite__card-bottom">
+                <a class="primary__card-link" href="interior-alexandr.html">
+                  <h3 class="primary__card-text">Alexandr</h3>
+                  <h3 class="primary__card-price">от 89 082 ₽</h3>
+                </a>
+              </div>
+            </div>
+          </div><!-- ./favorites__card-item -->
+
+          <div class="favorites__card-item">
+            <div class="favorite__card-img" style="background-image: url(img/favorites/ph-2.png);">
+              <button class="favorite__delete-btn"></button>
+              <div class="favourite__card-bottom">
+                <a class="primary__card-link" href="interior-alexandr.html">
+                  <h3 class="primary__card-text">Alexandr</h3>
+                  <h3 class="primary__card-price">от 89 082 ₽</h3>
+                </a>
+              </div>
+            </div>
+          </div><!-- ./favorites__card-item -->
+          
+          <div class="favorites__card-item">
+            <div class="favorite__card-img" style="background-image: url(img/favorites/ph-3.png);">
+              <button class="favorite__delete-btn"></button>
+              <div class="favourite__card-bottom">
+                <a class="primary__card-link" href="interior-alexandr.html">
+                  <h3 class="primary__card-text">Alexandr</h3>
+                  <h3 class="primary__card-price">от 89 082 ₽</h3>
+                </a>
+              </div>
+            </div>
+          </div><!-- ./favorites__card-item -->
+
+          <div class="favorites__card-item">
+            <div class="favorite__card-img" style="background-image: url(img/favorites/ph-4.png);">
+              <button class="favorite__delete-btn"></button>
+              <div class="favourite__card-bottom">
+                <a class="primary__card-link" href="interior-alexandr.html">
+                  <h3 class="primary__card-text">Alexandr</h3>
+                  <h3 class="primary__card-price">от 89 082 ₽</h3>
+                </a>
+              </div>
+            </div>
+          </div><!-- ./favorites__card-item -->
+
+          <div class="favorites__card-item">
+            <div class="favorite__card-img" style="background-image: url(img/favorites/ph-1.png);">
+              <button class="favorite__delete-btn"></button>
+              <div class="favourite__card-bottom">
+                <a class="primary__card-link" href="interior-alexandr.html">
+                  <h3 class="primary__card-text">Alexandr</h3>
+                  <h3 class="primary__card-price">от 89 082 ₽</h3>
+                </a>
+              </div>
+            </div>
+          </div><!-- ./favorites__card-item -->
+
+        </div><!-- ./favorites__cards -->
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-up">
+    <div class="container">
+      <div class="footer-up__inner">
+        <a href="index.html" class="footer-up__link">Главная</a>
+
+        <svg class="footer-up__icon">
+          <use xlink:href="#right-arrow-icon"></use>
+        </svg>
+
+        <a href="favorites.html" class="footer-up__link">Избранное</a>
+      </div>
+    </div>
+  </div>
+  <!-- ./footer-up -->
+
+  @include('partials/footer.html')
+
+  <svg display="none">
+    <symbol id="right-arrow-icon" viewBox="0 0 476.213 476.213">
+      <polygon xmlns="http://www.w3.org/2000/svg" points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5   345.606,368.713 476.213,238.106 " fill="#0000004d" data-original="#000000"/>
+    </symbol>
+  </svg>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

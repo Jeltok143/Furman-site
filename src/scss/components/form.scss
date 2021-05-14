@@ -1,0 +1,19 @@
+.form-call-catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.js-validate-error-label {
+  position: relative;
+  top: -25px;
+  left: 0;
+  color: #FF0000!important;
+  font-size: 1.4rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+
+  @media (max-width: (499px)) {
+    font-size: 1.2rem;
+  }
+}

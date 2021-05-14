@@ -1,0 +1,38 @@
+.swiper-slide {
+  position: static;
+}
+
+.swiper-container {
+  padding-bottom: 120px;
+
+  @media (max-width: (991px)) {
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: (768px)) {
+    padding-bottom: 30px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin-left: 3.5rem;
+  margin-top: 2rem;
+  color: $black;
+  background: none;
+  border: none;
+  outline: none;
+  width: 8.75px;
+  height: 17.5px;
+
+  @media (max-width: (499px)) {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.8rem;
+}

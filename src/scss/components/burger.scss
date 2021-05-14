@@ -1,0 +1,153 @@
+.burger {
+  @media (min-width: (991px)) {
+    display: none;
+  }
+}
+
+.menu {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  z-index: 1;
+  width: 30%;
+  height: 100vh;
+  background-color: $white;
+  transition: transform 0.4s ease;
+  transform: translateX(-100%);
+
+  @media (max-width: (768px)) {
+    width: 100%;
+  }
+}
+
+.menu__active {
+  transform: translateX(0%);
+  overflow: hidden;
+
+  @media (max-width: (768px)) {
+    left: 0;
+  }
+}
+
+.menu__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menu__list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $black;
+  padding: 2.2rem 1.2rem;
+}
+
+.menu__list-nav {
+  position: relative;
+  z-index: 1000;
+}
+
+.menu__list-footer {
+  position: absolute;
+  bottom: 65px;
+  left: 15px;
+}
+
+.menu__btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -60px;
+  top: 17px;
+}
+
+.menu__close {
+  width: 18px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: none;
+  transition: transform 0.2s linear;
+
+  & > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+    transform: rotate(45deg);
+  }
+
+  & > span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    transform: rotate(15deg);
+  }
+}
+
+.menu__close-img {
+  width: 15px;
+  height: 14px;
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: rotate(15deg);
+  }
+}
+
+.menu__input {
+  width: 100%;
+  border: none;
+  background: none;
+  margin: 0 1.2rem;
+  outline: none;
+  position: relative;
+
+  &::after {
+    content: "Поиск";
+    display: block;
+    width: 100%;
+    position: absolute;
+    font-size: 1.5rem;
+    top: -8px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.menu__nav-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.4rem 1.6rem;
+}
+
+.menu__nav-link {
+  font-size: 1.7rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  color: $black;
+  transition: color .2s linear;
+
+  &:hover {
+    color: gray;
+  }
+}
+
+.menu__nav-img {
+  width: 15px;
+  height: 13px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

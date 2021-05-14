@@ -1,0 +1,271 @@
+.catalog {
+  padding: 8rem 0rem;
+
+  @media (max-width: (768px)) {
+    padding: 2rem 0;
+  }
+}
+
+.catalog__block {
+  padding: 5rem 0rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: (991px)) {
+    justify-content: center;
+  }
+
+  @media (max-width: (768px)) {
+    padding: 1rem 0rem 1rem;
+  }
+}
+
+.catalog__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catalog__block-item {
+  margin-top: 4rem;
+  margin-right: 2rem;
+  width: calc(33.33333% - 20px);
+
+  &:hover {
+    .catalog__block-name {
+      color: gray;
+    }
+  }
+
+  @media (max-width: (991px)) {
+    width: 40%;
+    margin-left: 2rem;
+  }
+
+  @media (max-width: (768px)) {
+    width: 70%;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: (499px)) {
+    width: 100%;
+  }
+}
+
+.catalog__card-img {
+  position: relative;
+  height: 280px;
+  background-repeat: no-repeat;
+  max-height: 300px;
+  background-position: center;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(#D8D8D8, .0);
+    transition: background-color .2s linear;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    cursor: pointer;
+    &::before {
+      background-color: rgba(#D8D8D8, .2);
+    }
+  }
+
+  @media (max-width: (1199px)) {
+    background-size: 100%;
+    height: 300px; 
+  }
+
+  @media (max-width: (991px)) {
+    height: 180px;
+  }
+
+  @media (max-width: (768px)) {
+    height: 290px;
+  }
+
+  @media (max-width: (499px)) {
+    height: 165px;
+  }
+}
+
+.catalog__block-top {
+  cursor: pointer;
+  position: relative;
+  height: 290px;
+  background-repeat: no-repeat;
+  max-height: 300px;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #D8D8D8;
+    opacity: 0;
+    transition: opacity .2s linear;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 30%;
+    }
+  }
+
+  @media (max-width: (499px)) {
+    height: 150px;
+    background-size: 100%;
+  }
+}
+
+.catalog__block-name {
+  transition: color .2s linear;
+  font-size: 2rem;
+  color: $black;
+  font-family: 'Raleway';
+  font-weight: 500;
+  text-align: center;
+
+  @media (max-width: (768px)) {
+    font-size: 1.5rem;
+  }
+}
+
+.catalog__novelty {
+  padding: 5rem 0rem 5rem;
+  
+
+  @media (max-width: (768px)) {
+    padding: 1rem 0rem 1rem;
+  }
+}
+
+.catalog__choice {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+
+  @media (max-width: (991px)) {
+    flex-direction: column;
+  }
+}
+
+.catalog__choice-left {
+  display: flex;
+
+  & > select {
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: (991px)) {
+    flex-direction: column;
+  }
+}
+
+.catalog__choice-wrapper {
+  position: relative;
+
+  &:first-child {
+    margin-right: 2rem;
+
+    @media (max-width: (991px)) {
+      margin-right: 0;
+    }
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.catalog__roll-item {
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  color: $black;
+  width: 100%;
+
+  & > div {
+    margin-right: 15rem;
+  }
+}
+
+.catalog__pagination-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog__pagination-item {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: $black;
+  transition: background-color .2s linear;
+
+  &:first-child {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: #F4F4F4;
+  }
+
+  &--active {
+    background-color: $black;
+    color: $white;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  & > a {
+    color: inherit;
+  }
+}
+
+.catalog__card-new {
+  position: relative;
+  margin-bottom: 3.5rem;
+  margin-right: 2rem;
+  width: calc(33.33333% - 20px);
+
+  @media (max-width: (1199px)) {
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 991px) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.catalog__card-bottom {
+  margin-top: 1rem;
+}
+
+.catalog__choice-select4 {
+  color: $black;
+  background-color: #000;
+}

@@ -1,0 +1,145 @@
+.authors {
+  padding: 8rem 0rem;
+
+  @media (max-width: (768px)) {
+    padding: 2rem 0;
+  }
+}
+
+.authors__buttons {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.authors__choice {
+  border: none;
+  background-color: #F4F4F4;
+  color: $black;
+  padding: 1.2rem 2rem;
+  border-radius: 100px;
+  margin-right: 1.5rem;
+  font-size: 1.7rem;
+  transition: background-color .2s linear;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #EBEBEB;
+  }
+
+  &--active {
+    color: $white;
+    background-color: $black;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+  @media (max-width: (991px)) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.authors__photo {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: (1199px)) {
+    justify-content: center;
+  }
+
+  @media (max-width: (991px)) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.author__photo-item {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: calc( 33.33333% - 20px );
+
+  @media (max-width: (1199px)) {
+    width: 60%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: (991px)) {
+    width: 60%;
+  }
+
+  @media (max-width: (768px)) {
+    width: 80%;
+  }
+
+  @media (max-width: (499px)) {
+    width: 95%;
+    margin: 2rem 0rem .5rem;
+  }
+}
+
+.author__photo-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aurhor__photo-name {
+  margin: 2rem 0rem .5rem;
+  font-size: 3rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: $black;
+  transition: color .2s linear;
+
+  @media (max-width: (1199px)) {
+    margin: 0;
+  }
+
+  @media (max-width: (991px)) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: (499px)) {
+    font-size: 1.8rem;
+  }
+}
+
+.author__photo-style {
+  margin: .5rem 0rem;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Raleway';
+  font-weight: 500;
+
+  @media (max-width: (991px)) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: (499px)) {
+    font-size: 1.4rem;
+  }
+}

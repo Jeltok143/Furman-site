@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Furman</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  @include('partials/header.html') 
+  @include('partials/call-widget.html')
+  @include('partials/modal-call-panel.html')
+  @include('partials/modal-mailing.html')
+  @include('partials/modal-search.html')
+
+
+  <div class="stocks">
+    <div class="container">
+      <div class="stocks__inner">
+        <h1 class="page__title">Акции и скидки</h1>
+        <p class="page__text">
+          В каталоге компании представлена мебель нашего производства, выполненная по инновационным технологиям, соответствующая стандартам качества. Реализация собственной продукции без посредников и накруток гарантирует доступную стоимость
+        </p>
+
+        <div class="catalog__block">
+
+          <div class="catalog__block-item">
+            <a href="catalog-sofa.html">
+              <div class="catalog__block-top" style="background-image: url(img/stocks/ph-1.png);"></div>
+              <a class="catalog__redirect-link" href="catalog-sofa.html">
+                <div class="stocks__block-bottom">
+                  <h2 class="stocks__block-name">Весь декабрь на модели Konte, Visconte, Sorrento действует скидка 30%.</h2>
+                  <h3 class="stocks__block-price">от 89 082 ₽</h3>
+                </div>
+              </a>
+            </a>
+          </div>
+          <!-- ./catalog__block-item -->
+
+
+          <div class="catalog__block-item">
+            <a href="catalog-sofa.html">
+              <div class="catalog__block-top" style="background-image: url(img/stocks/ph-2.png);"></div>
+              <a class="catalog__redirect-link" href="catalog-sofa.html">
+                <div class="stocks__block-bottom">
+                  <h2 class="stocks__block-name">28 ноября – 10 декабря на модель Ultra действует специальное предложение.</h2>
+                  <h3 class="stocks__block-price">от 89 082 ₽</h3>
+                </div>
+              </a>
+            </a>
+          </div>
+          <!-- ./catalog__block-item -->
+
+          <div class="catalog__block-item">
+            <a href="catalog-sofa.html">
+              <div class="catalog__block-top" style="background-image: url(img/stocks/ph-3.png);"></div>
+              <a class="catalog__redirect-link" href="catalog-sofa.html">
+                <div class="stocks__block-bottom">
+                  <h2 class="stocks__block-name">Эксклюзивыная распрадажа в салоне по адресу: м. Бибирево, ул. Пришвина, д. 17, ТЦ "Мебель России".</h2>
+                  <h3 class="stocks__block-price">от 89 082 ₽</h3>
+                </div>
+              </a>
+            </a>
+          </div>
+          <!-- ./catalog__block-item -->
+
+          <div class="catalog__block-item">
+            <a href="catalog-sofa.html">
+              <div class="catalog__block-top" style="background-image: url(img/stocks/ph-4.png);"></div>
+              <a class="catalog__redirect-link" href="catalog-sofa.html">
+                <div class="stocks__block-bottom">
+                  <h2 class="stocks__block-name">Весь декабрь на модели Konte, Visconte, Sorrento действует скидка 30%.</h2>
+                  <h3 class="stocks__block-price">от 89 082 ₽</h3>
+                </div>
+              </a>
+            </a>
+          </div>
+          <!-- ./catalog__block-item -->
+
+          <div class="catalog__block-item">
+            <a href="catalog-sofa.html">
+              <div class="catalog__block-top" style="background-image: url(img/stocks/ph-5.png);"></div>
+              <a class="catalog__redirect-link" href="catalog-sofa.html">
+                <div class="stocks__block-bottom">
+                  <h2 class="stocks__block-name">28 ноября – 10 декабря на модель Ultra действует специальное предложение.</h2>
+                  <h3 class="stocks__block-price">от 89 082 ₽</h3>
+                </div>
+              </a>
+            </a>
+          </div>
+          <!-- ./catalog__block-item -->
+
+        </div>
+        <!-- ./catalog__block -->
+
+      </div><!-- ./stocks__inner -->
+    </div><!-- ./container -->
+  </div><!-- ./stocks -->
+
+  <div class="footer-up">
+    <div class="container">
+      <div class="footer-up__inner">
+        <a href="index.html" class="footer-up__link">Главная</a>
+
+        <svg class="footer-up__icon">
+          <use xlink:href="#right-arrow-icon"></use>
+        </svg>
+
+        <a href="stocks.html" class="footer-up__link">Акции и скидки</a>
+      </div>
+    </div>
+  </div>
+  <!-- ./footer-up -->
+
+  @include('partials/footer.html')
+
+  <svg display="none">
+    <symbol id="right-arrow-icon" viewBox="0 0 476.213 476.213">
+      <polygon
+        xmlns="http://www.w3.org/2000/svg"
+        points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5   345.606,368.713 476.213,238.106 "
+        fill="#0000004d"
+        data-original="#000000"
+      />
+    </symbol>
+  </svg>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

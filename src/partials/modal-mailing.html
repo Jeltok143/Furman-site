@@ -1,0 +1,49 @@
+<div class="modal__mail">
+  <div class="modal__mail-container">
+
+    <div class="modal__mail-close">
+      <button class="modal__mail-btn">
+        <img
+          src="img/icons/close-icon.png"
+          alt=""
+          class="modal__mail-img"
+        />
+      </button>
+    </div><!-- ./modal__mail-close -->
+
+    <div class="modal__mail-top">
+      <img src="img/photo/ph-22.png" alt="photo" class="modal__mail-bg" />
+    </div><!-- ./modal__mail-top -->
+
+    <div class="modal__mail-inner">
+
+      <div class="modal__mail-main">
+        <h2 class="modal__title modal__title--mail">Подпишитесь на рассылку и акции</h2>
+
+        <form class="form-mail">
+          <input class="page__input" type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+          <input class="page__input" type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+
+          <div class="page__input-wrapper">
+            <input class="page__input" inputmode="email" name="email" data-validate-field="email" placeholder="Электронная почта">
+          </div>
+
+
+          <label class="page__label">
+            <input type="checkbox" class="page__check">
+            <span class="page__fake"></span>
+            <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
+          </label>
+
+          <button class="black__button black__button--call">Подписаться</button>
+        </form>
+      </div><!-- ./modal__mail-main -->
+
+      <div class="modal__mail-bottom">
+        <p class="modal__block-text">
+          Сайт использует reCAPTCHA согласно Политике конфиденциальности и Условиям обслуживания Google.
+        </p>
+      </div>
+    </div><!-- ./modal__mail-inner -->
+  </div><!-- ./modal__mail-container -->
+</div><!-- ./modal__mail -->

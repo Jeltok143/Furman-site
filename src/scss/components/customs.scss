@@ -1,0 +1,114 @@
+.choices__inner {
+  width: 200px;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #000000;
+  border-radius: 0;
+  font-family: 'Inter';
+  font-weight: 400;
+  padding: 1.5rem;
+  min-height: auto;
+  margin-bottom: 0.5rem;
+
+  @media (max-width: (991px)) {
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.is-open .choices__inner {
+  background-color: #fff;
+  border: none;
+  border: 1px solid #000000;
+  border-radius: 0;
+  font-family: 'Inter';
+  font-weight: 400;
+  padding: 1.5rem;
+  min-height: auto;
+}
+
+.choices__list--dropdown {
+  padding: 0rem;
+  background-color: #fff;
+}
+
+.is-active .choices__list .choices__list--dropdown{
+  padding-top: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.choices__item {
+  background-color: #fff;
+}
+
+.is-open .choices__list--dropdown {
+  position: absolute;
+  z-index: 2;
+  padding: 0rem;
+  background-color: #fff;
+  width: 200px;
+  border-radius: 0;
+  padding-top: 0.5rem;
+  color: $black;
+
+  @media (max-width: (991px)) {
+    width: 100%;
+  }
+}
+
+.choices[data-type*='select-one'] .choices__inner {
+  padding: 1.5rem;
+  border: 1px solid #000000;
+  color: #000;
+  text-align: left;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: $white;
+
+  &:hover {
+    background-color: #F4F4F4;
+  }
+}
+
+.choices__item .choices__item--choice .choices__item--selectable {
+  background-color: red;
+}
+
+.choices[data-type*='select-one']:after {
+  display: none;
+}
+
+.choices[data-type*='select-one']::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/icons/down-arrow-black.png);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  top: 35%;
+  right: 15px;
+  transform: rotate(180deg);
+
+  @media (max-width: (499px)) {
+    top: 30%;
+  }
+}
+
+@media (min-width: (640px)) {
+  .choices__list--dropdown .choices__item--selectable {
+    padding-right: 0; 
+  }
+}
+
+.choices__placeholder {
+  opacity: 1;
+}

@@ -1,0 +1,176 @@
+.search {
+  display: none;
+
+  &--active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: block;
+  }
+}
+
+.search__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.search__input {
+  width: 100%;
+  font-family: 'Raleway';
+  font-size: 5.5rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: $black;
+  font-weight: 500;
+
+  &::placeholder {
+    position: relative;
+    font-family: 'Raleway';
+    font-size: 5.5rem;
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+
+    @media(max-width: (991px)) {
+      font-size: 4.5rem;
+    }
+
+    @media (max-width: (768px)) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: (499px)) {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media(max-width: (991px)) {
+    font-size: 4.5rem;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: (499px)) {
+    font-size: 2.5rem;
+  }
+}
+
+.search__close {
+  display: flex;
+  justify-content: flex-end;
+
+
+  & > button {
+    border: none;
+    background: none;
+    transition: transform .2s linear;
+    cursor: pointer;
+
+    &:hover {
+      transform: rotate(15deg);
+    }
+  }
+}
+
+.search__close-img {
+  width: 16px;
+  height: 16px;
+}
+
+.search__result {
+  margin-top: 4rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  display: flex;
+  flex-direction: column;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.search__result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: #F4F4F4;
+  }
+}
+
+.search__result-left {
+  display: flex;
+  align-items: center;
+}
+
+.search__result-prev {
+  width: 50px;
+  height: 50px;
+  margin-right: 2.5rem;
+  transition: transform .2s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: (768px)) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (max-width: (499px)) {
+    margin-right: 1.5rem;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.search__result-name {
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: $black;
+  transition: color .2s linear;
+
+  &:hover {
+    color: #FF7614;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: (499px)) {
+    font-size: 1.5rem;
+  }
+}
+
+.search__result-price {
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+
+  @media (max-width: (768px)) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: (499px)) {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Furman</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  @include('partials/header.html') 
+  @include('partials/call-widget.html')
+  @include('partials/modal-call-panel.html')
+  @include('partials/modal-mailing.html')
+  @include('partials/modal-search.html')
+
+
+  <div class="about">
+    <div class="container">
+      <div class="about__inner">
+
+        <div class="about__brand about__brand--secondary">
+          <div>
+            <h1 class="about__brand-title">Оплата и доставка</h1>
+            <p class="about__brand-text">
+              Компания осуществляет полный цикл сервисного обслуживания: доставка, подъем на этаж, сборка, гарантия на весь товарный ассортимент.
+            </p>
+            <p class="about__brand-text">
+              Услуга доставки осуществляется по Москве и области. Заказ прибудет на место точно в указанное время, оговоренное с покупателем предварительно. В назначенный день клиент должен быть не телефонной связи, чтобы подтвердить время доставки. Если ситуация изменилась, необходимо предупредить об этом или оформить доверенность на другого человека, который будет вас представлять. 
+            </p>
+          </div>
+          <div>
+
+
+            
+          </div>
+          <div>
+            <h2 class="about__brand-subtitle">Оплата
+            </h2>
+
+            <p class="about__brand-text">
+              Мы предлагаем подъем мебели на этаж. В стоимость этой услуги входит не только подъем, но и занос и в квартиру, дальнейшая установка со сборкой и последующей проверкой работоспособности механизмов, а также вынос упаковочных материалов. Если сборка не была заказана сразу, ее можно оформить позже.
+            </p>
+            <p class="about__brand-text">
+              Стоимость услуги – 1250 рублей (выезд специалистов и непосредственно сборка) плюс оплата километража при условии расположения объекта за пределами города (30 рублей за километр). Оплата принимается как наличными, так и картой.  
+            </p>
+          </div>
+          <div>
+            <h2 class="about__brand-subtitle">Гарантия и сервис</h2>
+            <p class="about__brand-text">
+              Фирма предлагает сервисное обслуживание и дает гарантию на мебель – 18 месяцев. Это еще раз подтверждает качество диванов Furman. Обязательным условием для сохранения действия гарантийного срока является наличие накладной о покупке или чека, который выдается при получении изделия. Предоставляется также постгарантийное обслуживание
+            </p>
+          </div>
+        </div>
+
+      </div><!-- ./about__inner -->
+    </div><!-- ./container -->
+  </div><!-- ./about -->
+
+
+  <div class="footer-up">
+    <div class="container">
+      <div class="footer-up__inner">
+        <a href="index.html" class="footer-up__link">Главная</a>
+
+        <svg class="footer-up__icon">
+          <use xlink:href="#right-arrow-icon"></use>
+        </svg>
+
+        <a href="delivery.html" class="footer-up__link">Оплата и доставка</a>
+      </div>
+    </div>
+  </div>
+  <!-- ./footer-up -->
+
+  @include('partials/footer.html')
+
+  <svg display="none">
+    <symbol id="right-arrow-icon" viewBox="0 0 476.213 476.213">
+      <polygon
+        xmlns="http://www.w3.org/2000/svg"
+        points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5   345.606,368.713 476.213,238.106 "
+        fill="#0000004d"
+        data-original="#000000"
+      />
+    </symbol>
+  </svg>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

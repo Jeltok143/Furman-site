@@ -1,0 +1,199 @@
+.contact__inner {
+  padding: 8rem 0rem;
+
+  @media (max-width: (768px)) {
+    padding: 0;
+  }
+}
+
+.contact__map {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+  
+  @media (max-width: (1199px)) {
+    max-height: 300px;
+  }
+
+  @media (max-width: (768px)) {
+    max-height: 270px;
+  }
+
+  @media (max-width: (499px)) {
+    max-height: 240px;
+  }
+}
+
+.contact__map-container {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.contact__table {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+.contact__table-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &--first {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+    @media (max-width: (991px)) {
+      width: 100%;
+      justify-content: center;
+
+      & > .contact__table-name, .contact__table-schedule {
+        margin-top: 2rem;
+        width: 50%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: (499px)) {
+      flex-direction: column;
+      align-items: center;
+
+      & > .contact__table-name, .contact__table-schedule {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: (768px)) {
+      padding: 0;
+    }
+  }
+
+  &--second {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+    @media (max-width: (991px)) {
+      width: 100%;
+      justify-content: center;
+
+      & > .contact__table-info, .contact__table-map {
+        margin-top: 2rem;
+        width: 50%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: (499px)) {
+      flex-direction: column;
+      align-items: center;
+
+      & > .contact__table-info, .contact__table-map {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+.contact__table-name {
+  width: 25%;
+}
+
+.contact__name-top {
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+
+  @media (max-width: (768px)) {
+    text-align: left;
+  }
+
+  @media (max-width: (499px)) {
+    font-size: 1.5rem;
+  }
+}
+
+.contact__address {
+  display: inline-block;
+  width: 100%;
+  font-size: 2rem;
+  color: $black;
+  font-family: 'Raleway';
+  font-weight: 500;
+  transition: color .2s linear;
+
+  &:hover {
+    color: gray;
+  }
+
+  @media (max-width: (768px)) {
+    text-align: left;
+  }
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+
+  & > a{
+    font-size: 2rem;
+    color: $black;
+    font-family: 'Raleway';
+    margin-bottom: 1rem;
+    transition: color .2s linear;
+
+    &:hover {
+      color: gray;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: (768px)) {
+    text-align: left;
+  }
+}
+
+.contact__table-name {
+  
+  @media (max-width: (768px)) {
+    text-align: left;
+  }
+}
+
+.contact__table-schedule {
+
+  @media (max-width: (768px)) {
+    text-align: right;
+  }
+}

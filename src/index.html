@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Furman</title>
+  </head>
+
+  <body id="top">
+    @include('partials/header.html') 
+    @include('partials/call-widget.html')
+    @include('partials/modal-call-panel.html')
+    @include('partials/modal-mailing.html')
+    @include('partials/modal-search.html')
+
+    <div class="main">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__photo">
+            <div class="main__info">
+              <div class="main__text">
+                <h1 class="main__title">
+                  Для ценителей стиля и умеренной роскоши, мы создаем мебель для
+                  вас
+                </h1>
+              </div>
+              <button class="black__button">
+                <a href="interior-catalog.html">
+                  Выбрать интерьер
+                  <img
+                    src="img/icons/right-white-arrow.png"
+                    alt="arrow"
+                    class="black__button-img"
+                  />
+                </a>
+              </button>
+            </div>
+            <!-- ./main__info -->
+          </div>
+          <!-- ./main__photo -->
+        </div>
+        <!-- ./main__inner -->
+      </div>
+    </div>
+    <!-- ./main -->
+
+    <div class="interior">
+      <div class="container">
+        <div class="interior__inner">
+          <div class="interior__block">
+            <div class="interior__photo">
+              <img
+                src="img/photo/ph-1.png"
+                alt="photo1"
+                class="interior__img"
+              />
+            </div>
+
+            <div class="interior__info">
+              <h2 class="interior__title">
+                Откройте для себя <br />
+                интерьер своей мечты
+              </h2>
+              <p class="interior__text">
+                От смешивания и сочетания пород дерева до понимания того, какие
+                журнальные столики лучше всего подходят для разных типов секций,
+                оформление комнаты - это искусство. Поэтому мы собрали серию
+                гостиных в профессиональном стиле, чтобы дать толчок вашему
+                воображению.
+              </p>
+              <div class="redirect">
+                <a
+                  id="redirect"
+                  class="redirect__link"
+                  href="interior-catalog.html"
+                >
+                  Выбрать стиль
+                  <img
+                    class="redirect__img"
+                    src="img/icons/right-black-arrow.png"
+                    alt="arrow"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ./interior__block -->
+
+          <div class="main__catalog">
+
+            <div class="main__catalog-item">
+              <a href="interior-catalog.html">
+                <div class="main__catalog-top" style="background-image: url(img/photo/ph-2.png);"></div>
+              </a>
+              <div class="main__catalog-bottom">
+                <a href="interior-catalog.html">
+                  <h3 class="main__catalog-name">Современный</h3>
+                  <h3 class="main__catalog-count">12</h3>
+                </a>
+              </div>
+            </div>
+
+            <div class="main__catalog-item">
+              <a href="interior-catalog.html">
+                <div class="main__catalog-top" style="background-image: url(img/photo/ph-3.png);"></div>
+              </a>
+              <div class="main__catalog-bottom">
+                <a href="interior-catalog.html">
+                  <h3 class="main__catalog-name">Лофт</h3>
+                  <h3 class="main__catalog-count">4</h3>
+                </a>
+              </div>
+            </div>
+
+            <div class="main__catalog-item">
+              <a href="interior-catalog.html">
+                <div class="main__catalog-top" style="background-image: url(img/photo/ph-4.png);"></div>
+              </a>
+              <div class="main__catalog-bottom">
+                <a href="interior-catalog.html">
+                  <h3 class="main__catalog-name">Классика</h3>
+                  <h3 class="main__catalog-count">32</h3>
+                </a>
+              </div>
+            </div>
+
+            <div class="main__catalog-item">
+              <a href="interior-catalog.html">
+                <div class="main__catalog-top" style="background-image: url(img/photo/ph-5.png);"></div>
+              </a>
+              <div class="main__catalog-bottom">
+                <a href="interior-catalog.html">
+                  <h3 class="main__catalog-name">Современная классика</h3>
+                  <h3 class="main__catalog-count">15</h3>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- ./interior__inner -->
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./interior -->
+
+    <div class="page">
+      <div class="container">
+        <h2 class="page__title">Каталог новинок</h2>
+        <div class="page__middle">
+          <p class="page__text">
+            Изделия бренда предоставляют неограниченные возможности для любого
+            вида времяпровождения – комфортного сна и расслабляющего релакса,
+            уютного чаепития в кругу семьи, приятного отдыха с друзьями.
+          </p>
+          <div class="redirect">
+            <a id="redirect" class="redirect__link" href="catalog.html">
+              Все новинки
+              <img
+                class="redirect__img"
+                src="img/icons/right-black-arrow.png"
+                alt="arrow"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="catalog__novelty">
+          <div class="catalog__cards">
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/photo/ph-6.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/photo/ph-7.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/photo/ph-8.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/photo/ph-9.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/photo/ph-10.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/photo/ph-11.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+            </div><!-- ./catalog__card-new -->
+
+        </div><!-- ./catalog__novelty -->
+
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./page -->
+
+    <div class="slider">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+
+        <div
+          class="parallax-bg"
+          style="background-image: url(img/photo/ph-12.png)"
+          data-swiper-parallax="-23%"
+        ></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slide">
+              <div class="page__slide">
+                <img
+                  class="page__slide-img"
+                  src="img/photo/ph-12.png"
+                  alt="photo"
+                />
+              </div>
+              <div class="page__slide-card">
+                <p class="slide__text">
+                  “Для кого предназначена наша <br />
+                  мебель? Для людей активных, <br />
+                  молодых не только телом, но и <br />
+                  душой, предпочитающих ценить <br />
+                  в жизни уют и комфорт”
+                </p>
+                <img src="img/photo/ph-13.png" alt="photo" class="slide__img" />
+                <h3 class="slide__name">Орехов Станислав</h3>
+                <h3 class="slide__prof">дизайнер интерьеров</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <div class="page__slide">
+                <img
+                  class="page__slide-img"
+                  src="img/photo/ph-12.png"
+                  alt="photo"
+                />
+              </div>
+              <div class="page__slide-card">
+                <p class="slide__text">
+                  “Для кого предназначена наша <br />
+                  мебель? Для людей активных, <br />
+                  молодых не только телом, но и <br />
+                  душой, предпочитающих ценить <br />
+                  в жизни уют и комфорт”
+                </p>
+                <img src="img/photo/ph-13.png" alt="photo" class="slide__img" />
+                <h3 class="slide__name">Орехов Станислав</h3>
+                <h3 class="slide__prof">дизайнер интерьеров</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <div class="page__slide">
+                <img
+                  class="page__slide-img"
+                  src="img/photo/ph-12.png"
+                  alt="photo"
+                />
+              </div>
+              <div class="page__slide-card">
+                <p class="slide__text">
+                  “Для кого предназначена наша <br />
+                  мебель? Для людей активных, <br />
+                  молодых не только телом, но и <br />
+                  душой, предпочитающих ценить <br />
+                  в жизни уют и комфорт”
+                </p>
+                <img src="img/photo/ph-13.png" alt="photo" class="slide__img" />
+                <h3 class="slide__name">Орехов Станислав</h3>
+                <h3 class="slide__prof">дизайнер интерьеров</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+      </div>
+
+      <div class="container">
+        <div class="slider__bottom">
+          <button class="swiper-button-prev"></button>
+          <button class="swiper-button-next"></button>
+        </div>
+      </div>
+    </div>
+    <!-- ./slider -->
+
+    <div class="container">
+        <h2 class="page__title">Акции и скидки</h2>
+        <div class="page__middle">
+          <p class="page__text">
+            В каталоге компании представлена мебель нашего производства,
+            выполненная по инновационным технологиям, соответствующая стандартам
+            качества. Реализация собственной продукции без посредников и
+            накруток гарантирует доступную стоимость
+          </p>
+          <div class="redirect">
+            <a id="redirect" class="redirect__link" href="stocks.html">
+              Все акции
+              <img
+                class="redirect__img"
+                src="img/icons/right-black-arrow.png"
+                alt="arrow"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="catalog__block">
+
+          <div class="catalog__block-item">
+            <a href="catalog-sofa.html">
+              <div class="catalog__block-top" style="background-image: url(img/stocks/ph-1.png);"></div>
+              <a class="catalog__redirect-link" href="catalog-sofa.html">
+                <div class="stocks__block-bottom">
+                  <h2 class="stocks__block-name">Весь декабрь на модели Konte, Visconte, Sorrento действует скидка 30%.</h2>
+                  <h3 class="stocks__block-price">от 89 082 ₽</h3>
+                </div>
+              </a>
+            </a>
+          </div>
+          <!-- ./catalog__block-item -->
+
+
+          <div class="catalog__block-item">
+            <a href="catalog-sofa.html">
+              <div class="catalog__block-top" style="background-image: url(img/stocks/ph-2.png);"></div>
+              <a class="catalog__redirect-link" href="catalog-sofa.html">
+                <div class="stocks__block-bottom">
+                  <h2 class="stocks__block-name">28 ноября – 10 декабря на модель Ultra действует специальное предложение.</h2>
+                  <h3 class="stocks__block-price">от 89 082 ₽</h3>
+                </div>
+              </a>
+            </a>
+          </div>
+          <!-- ./catalog__block-item -->
+
+          <div class="catalog__block-item">
+            <a href="catalog-sofa.html">
+              <div class="catalog__block-top" style="background-image: url(img/stocks/ph-3.png);"></div>
+              <a class="catalog__redirect-link" href="catalog-sofa.html">
+                <div class="stocks__block-bottom">
+                  <h2 class="stocks__block-name">Эксклюзивыная распрадажа в салоне по адресу: м. Бибирево, ул. Пришвина, д. 17, ТЦ "Мебель России".</h2>
+                  <h3 class="stocks__block-price">от 89 082 ₽</h3>
+                </div>
+              </a>
+            </a>
+          </div>
+          <!-- ./catalog__block-item -->
+
+        </div>
+        <!-- ./catalog__block -->
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./page__block -->
+
+    <div class="page__block">
+      <div class="container">
+        <h2 class="page__title">
+          Роскошная мебель <br />
+          для комфортной жизни
+        </h2>
+        <div class="page__middle">
+          <p class="page__text">
+            Уникальный модельный ряд, высокие показатели по качеству, широкий
+            выбор под любые <br />
+            потребности и желания потребителя.
+          </p>
+          <div class="redirect">
+            <a id="redirect" class="redirect__link" href="about.html">
+              О бренде
+              <img
+                class="redirect__img"
+                src="img/icons/right-black-arrow.png"
+                alt="arrow"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="page__video">
+          <a data-fslightbox="lightbox" href="https://www.youtube.com/watch?v=QeNJ31qLgBs">
+            <img src="img/video-preview/video-preview.png" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./page__block -->
+
+    @include('partials/footer.html')
+
+    <svg display="none">
+      <symbol id="polygon-icon" viewBox="0 0 30 36">
+        <path
+          d="M30 18L-1.63133e-06 35.3205L-1.17124e-07 0.67949L30 18Z"
+          fill="black"
+        />
+      </symbol>
+    </svg>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        loop: true,
+        parallax: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2500,
+        },
+      });
+    </script>
+  </body>
+</html>

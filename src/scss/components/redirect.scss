@@ -1,0 +1,30 @@
+.redirect {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: (768px)) {
+    margin-top: 3rem;
+  }
+}
+
+.redirect__link {
+  font-size: 1.7rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: $black;
+  text-decoration: none;
+  transition: color .2s linear, transform .2s linear;
+
+  &--active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &:hover {
+    color: gray;
+    transform: translateY(-2px);
+  }
+}
+
+.redirect__img {
+  margin-left: 0.8rem;
+}

@@ -1,0 +1,412 @@
+.page {
+
+  &--product {
+    margin: 5rem 0
+  }
+}
+
+.page__block{
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+
+  @media (max-width: (768px)) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.page__title {
+  font-size: 5.5rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: $black;
+  margin-bottom: 3rem;
+
+  @media (max-width: (1199px)) {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  @media (max-width: (991px)) {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 499px) {
+    font-size: 3rem;
+    text-align: left;
+  }
+}
+
+.page__middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+
+  &--product {
+    align-items: center;
+  }
+}
+
+.page__text {
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: $black;
+  width: 60%;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: (1199px)) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: (991px)) {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 499px) {
+    font-size: 1.3rem;
+  }
+}
+
+.page__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 7.5rem;
+
+  @media (max-width: (991px)) {
+    justify-content: center;
+  }
+
+  @media (max-width: (768px)) {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.page__card-item {
+  width: calc( 33.33333% - 20px);
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+
+  @media (max-width: (991px)) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  @media (max-width: (768px)) {
+    margin-right: 0;
+  }
+}
+
+.page__card-interior {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+
+  @media (max-width: (1199px)) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: (991px)) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  @media (max-width: (768px)) {
+    margin: 1rem 4rem;
+  }
+
+  @media (max-width: (499px)) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.page__card-photo {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &--mb0 {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(#D8D8D8, .0);
+    transition: background-color .2s linear;
+  }
+
+  &:hover {
+    cursor: pointer;
+    &::before {
+      background-color: rgba(#D8D8D8, .2);
+    }
+  }
+}
+
+.primary__card-bottom,
+.secondary__card-bottom {
+  display: flex;
+}
+
+.secondary__card-bottom {
+  flex-direction: column;
+}
+
+
+.primary__card-link {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .primary__card-text {
+      color: gray;
+    }
+
+    .aurhor__photo-name {
+      color: gray;
+    }
+  }
+}
+
+.primary__card-text,
+.secondary__card-text {
+  font-size: 1.7rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: $black;
+  transition: color .2s linear;
+
+  @media (max-width: (991px)) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 1.9rem;
+  }
+}
+
+.secondary__card-text {
+  font-size: 2rem;
+  margin-top: 1rem;
+
+  @media (max-width: (768px)) {
+    font-size: 1.5rem;
+  }
+}
+
+.primary__card-price,
+.secondary__card-price {
+  font-size: 1.7rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 1rem;
+
+  @media (max-width: (991px)) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 1.5rem;
+  }
+}
+
+.secondary__card-price {
+  margin-left: 0;
+  margin-top: 3rem;
+
+  @media (max-width: (768px)) {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+}
+
+.primary__card-link {
+
+  &:hover {
+    .secondary__card-text {
+      color: gray;
+    }
+  }
+}
+
+.secondary__card-link {
+
+  &:hover {
+    .secondary__card-text {
+      color: gray;
+    }
+  }
+}
+
+.page__input {
+  display: flex;
+  width: 100%;
+  padding: 1.6rem;
+  border: 1px solid $black;
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: $black;
+  margin-bottom: 3rem;
+  resize: none;
+  outline: none;
+
+  &--rev {
+    width: 100%;
+    max-width: none;
+  }
+
+  &--question {
+    min-height: 100px;
+  }
+
+  &:hover {
+
+    &::placeholder {  
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  @media (max-width: (1199px)) {
+    font-size: 1.25rem;
+    padding: 1.1rem;
+  }
+
+  @media (max-width: (768px)) {
+    
+  }
+
+  @media (max-width: (499px)) {
+    
+  }
+
+  &::placeholder {
+    transition: color .2s linear;
+    font-size: 1.7rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+
+    @media (max-width: (1199px)) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.page__input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.page__label {
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &:hover {
+    .page__fake {
+      border-width: 2px;
+    }
+  }
+
+  &--review {
+    margin-bottom: 3rem;
+  }
+}
+
+.page__check {
+  display: none;
+
+  &:checked + .page__fake::before {
+    opacity: 1;
+  }
+}
+
+.page__fake {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $black;
+  margin-right: 1.5rem;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icons/check-icon.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .2s linear;
+    opacity: 0;
+  }
+}
+
+.page__access {
+  font-size: 1.5rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: $black;
+
+  @media (max-width: (1199px)) {
+    font-size: 1.25rem;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: .9rem;
+  }
+
+  @media (max-width: 499px) {
+    font-size: 1.1rem;
+  }
+}
+
+.page__upload {
+  display: none;
+}
+
+.page__upload-btn {
+  text-align: center;
+
+  @media (max-width: (768px)) {
+    font-size: 1.3rem;
+  }
+}

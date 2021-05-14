@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>Furman</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    @include('partials/header.html')
+    @include('partials/call-widget.html')
+    @include('partials/modal-call-catalog.html')
+    @include('partials/modal-mailing.html')
+    @include('partials/modal-search.html')
+
+    <div class="product">
+      <div class="container">
+        <div class="product__header">
+          <div class="product__header-name">
+            <h2 class="product__name">Alexandr</h2>
+            <p class="product__remark">
+              В коллекции есть различные варианты размеров этого изделия. Также
+              можем изготовить этот диван в нужных вам размерах под заказ.
+            </p>
+            <a href="#" class="product__link">Индивидуальный заказ →</a>
+          </div>
+          <!-- ./product__header-name -->
+
+          <div class="product__info">
+            <p class="product__description">
+              Диван Alexandr практичен, комфортен и выполнен с особой
+              безупречностью. Он настолько самодостаточен, что станет главным
+              акцентом в помещении. Достаточно глубокое сиденье, удобные
+              подлокотники средней ширины, мягкие подушки — все продумано до
+              мельчайших подробностей. За основу при создании дивана Alexandr
+              были взяты высочайшие эталоны качества и соблюдена высокая
+              технологичность, что заставляет обратить на него особое внимание.
+            </p>
+            <a href="#" class="product__link">Характеристики ↓</a>
+          </div>
+          <!-- ./product__info -->
+
+          <div class="product__buy">
+            <h3 class="product__price">от 89 082 ₽</h3>
+            <button class="black__button black__button--buy">Заказать</button>
+            <button class="product__favourite">
+              <svg class="header__buttons-icon">
+                <use xlink:href="#love-icon"></use>
+              </svg>
+              Добавить в избранное
+            </button>
+          </div>
+        </div>
+        <!-- ./product__header -->
+
+        <div class="product__photo-block">
+          <div class="product__primary-photo">
+            <img src="img/products/alexandr-sofa1/ph-1.png" alt="photo" />
+          </div>
+          <div class="product__secondary-photo">
+            <div class="product__card-photo">
+              <img src="img/products/alexandr-sofa1/ph-2.png" alt="" />
+            </div>
+
+            <div class="product__card-photo">
+              <img src="img/products/alexandr-sofa1/ph-3.png" alt="" />
+            </div>
+
+            <div class="product__card-middle">
+              <div class="product__card-text">
+                <p class="product__card-info">
+                  Мы представляем вниманию посетителей актуальный каталог, в
+                  котором содержится множество позиций мебели, разнообразных по
+                  конструкционным особенностям, цветовому решению, габаритным
+                  показателям, дизайну. Но есть и общий показатель для всех
+                  моделей – это соответствие критериям, которые направлены на
+                  максимальный комфорт человека, обеспечение уюта, повышение
+                  качества жизни, соответствие современным требованиям
+                  потребителя
+                </p>
+              </div>
+
+              <div class="product__card-photo product__card-photo--middle">
+                <img src="img/products/alexandr-sofa1/ph-4.png" alt="" />
+              </div>
+            </div>
+
+            <div class="product__card-photo">
+              <img src="img/products/alexandr-sofa1/ph-5.png" alt="" />
+            </div>
+
+            <div class="product__card-photo">
+              <img src="img/products/alexandr-sofa1/ph-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- ./product__photo-block -->
+
+        <div class="product__set">
+          <h2 class="product__set-title">Выбор комплектации</h2>
+
+          <div class="product__set-inner">
+            <div class="product__set-left">
+              <div class="product__left-param">
+                <h2 class="product__param-name">Габариты ( Ш х Г x В )</h2>
+                <h2 class="product__param-value">275 x 164 x 94 см</h2>
+              </div>
+
+              <div class="product__left-param">
+                <h2 class="product__param-name">Спальное место</h2>
+                <h2 class="product__param-value">229 x 154 см</h2>
+              </div>
+
+              <div class="product__left-param">
+                <h2 class="product__param-name">Матрас</h2>
+                <h2 class="product__param-value">Multipocket + Memory Foam</h2>
+              </div>
+
+              <div class="product__left-param">
+                <h2 class="product__param-name">Бельевой ящик</h2>
+                <h2 class="product__param-value">Есть</h2>
+              </div>
+            </div>
+            <!-- ./product__set-left -->
+
+            <div class="product__set-right">
+              <div class="product__right-img">
+                <img src="img/products/alexandr-sofa1/ph-7.png" alt="param" />
+              </div>
+            </div>
+            <!-- ./product__set-right -->
+          </div>
+
+          <a href="#" class="product__link">Смотреть все комплектации →</a>
+        </div>
+        <!-- ./product__set -->
+
+        <div class="product__review">
+          <div class="product__review-left">
+            <h2 class="product__set-title">Оплата и доставка</h2>
+            <p class="product__review-info">
+              Оплатить товары и услуги вы можете в нашем салоне. Мы принимаем
+              оплату, как наличными, так и с помощью банковской карты. Также мы
+              предоставляем нашим клиентам возможность приобрести мебель в
+              кредит или рассрочку до 24 месяцев. Информацию по доставке можно
+              получить в будние дни с 9.00 до 17.30 по телефону +7 (495)
+              406-00-98.
+              <br />
+              <br />
+              Доставка нашей мебели осуществляется с 9 до 22 часов. Как только
+              ваш заказ прибудет на склад и будет готов к отправке, наш менеджер
+              свяжется с вами и уточнит удобный для вас день. Накануне
+              согласованной даты, пожалуйста, убедитесь в том, что вы доступны
+              для звонка, так как без подтверждения доставки мы не сможем
+              привезти к вам нашу мебель.
+            </p>
+          </div>
+          <!-- ./product__review-left -->
+
+          <div class="product__review-right">
+            <div class="product__review-top">
+              <h2 class="product__set-title">Отзывы</h2>
+              <a href="reviews.html" class="product__link">Оставить отзыв →</a>
+            </div>
+            <a href="reviews.html">
+              <img
+                class="product__review-img"
+                src="img/products/alexandr-sofa1/ph-8.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <a href="delivery.html" class="product__link product__link--top"
+            >Узнать больше →</a
+          >
+        </div>
+        <!-- ./product__review -->
+
+        <div class="product__banner">
+          <div class="product__banner-img">
+            <img src="img/products/alexandr-sofa1/ph-9.png" alt="">
+            <button class="white__button white__button--product">Заказать обратный звонок</button>
+          </div>
+        </div><!-- ./product__banner -->
+
+        <div class="catalog__novelty">
+          <h2 class="page__title">Товары из набора Porto</h2>
+
+          <div class="catalog__cards">
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/products/porto1/ph-1.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/products/porto1/ph-2.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/products/porto1/ph-3.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+              </div>
+            </div><!-- ./catalog__card-new -->
+
+        </div><!-- ./catalog__novelty -->
+
+        <div class="product__consult">
+          <div class="product__consult-img">
+            <img class="product__consult-photo" src="img/products/call-background.png" alt="consult">
+
+            <div class="product__consult-main">
+              <h2 class="product__consult-title">Не можете определиться <br> с цветом или не знаете <br> что лучше выбрать?</h2>
+              <p class="product__consult-subtitle">
+                Наши дизайнеры-консультанты помогут в подборе, <br> проконсультируют и ответят на все ваши вопросы!
+              </p>
+              <form class="form-call-product">
+                <input class="page__input" type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+                <input class="page__input" type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+      
+                <div class="page__input-wrapper">
+                  <input class="page__input" type="text" name="fio" data-validate-field="fio" placeholder="Имя">
+                </div>
+      
+                <div class="page__input-wrapper">
+                  <input class="page__input" type="tel" name="tel" data-validate-field="tel" placeholder="Номер телефона">
+                </div>
+      
+                <label class="page__label">
+                  <input type="checkbox" class="page__check">
+                  <span class="page__fake"></span>
+                  <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
+                </label>
+      
+                <button type="submit" class="black__button black__button--call">Заказать консультацию</button>
+              </form>
+            </div>
+
+          </div>
+        </div><!-- ./product__consul -->
+
+        <div class="catalog__novelty">
+          <h2 class="page__title">Похожие товары</h2>
+
+          <div class="catalog__cards">
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/catalog/sofas/ph-1.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/catalog/sofas/ph-2.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+            </div>
+
+            <div class="catalog__card-new">
+              <a href="interior-alexandr.html" class="favourite__card-link">
+                <div class="catalog__card-img" style="background-image: url(img/catalog/sofas/ph-12.png);"></div>
+              </a>
+                <div class="catalog__card-bottom">
+                  <a class="primary__card-link" href="interior-alexandr.html">
+                    <h3 class="primary__card-text">Alexandr</h3>
+                    <h3 class="primary__card-price">от 89 082 ₽</h3>
+                  </a>
+                </div>
+              </div>
+            </div><!-- ./catalog__card-new -->
+
+        </div><!-- ./catalog__novelty -->
+
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./product -->
+
+    <div class="footer-up">
+      <div class="container">
+        <div class="footer-up__inner">
+          <a href="index.html" class="footer-up__link">Главная</a>
+
+          <svg class="footer-up__icon">
+            <use xlink:href="#right-arrow-icon"></use>
+          </svg>
+
+          <a href="catalog.html" class="footer-up__link">Каталог</a>
+
+          <svg class="footer-up__icon">
+            <use xlink:href="#right-arrow-icon"></use>
+          </svg>
+
+          <a href="catalog-sofa.html" class="footer-up__link">Диваны</a>
+
+          <svg class="footer-up__icon">
+            <use xlink:href="#right-arrow-icon"></use>
+          </svg>
+
+          <a href="interior-alexandr.html" class="footer-up__link">Alexandr</a>
+        </div>
+      </div>
+    </div>
+    <!-- ./footer-up -->
+
+    @include('partials/footer.html')
+
+    <svg display="none">
+      <symbol id="right-arrow-icon" viewBox="0 0 476.213 476.213">
+        <polygon
+          xmlns="http://www.w3.org/2000/svg"
+          points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5   345.606,368.713 476.213,238.106 "
+          fill="#0000004d"
+          data-original="#000000"
+        />
+      </symbol>
+      <symbol id="love-icon" viewBox="0 -20 480 480">
+        <path
+          d="m348 0c-43 .0664062-83.28125 21.039062-108 56.222656-24.71875-35.183594-65-56.1562498-108-56.222656-70.320312 0-132 65.425781-132 140 0 72.679688 41.039062 147.535156 118.6875 216.480469 35.976562 31.882812 75.441406 59.597656 117.640625 82.625 2.304687 1.1875 5.039063 1.1875 7.34375 0 42.183594-23.027344 81.636719-50.746094 117.601563-82.625 77.6875-68.945313 118.726562-143.800781 118.726562-216.480469 0-74.574219-61.679688-140-132-140zm-108 422.902344c-29.382812-16.214844-224-129.496094-224-282.902344 0-66.054688 54.199219-124 116-124 41.867188.074219 80.460938 22.660156 101.03125 59.128906 1.539062 2.351563 4.160156 3.765625 6.96875 3.765625s5.429688-1.414062 6.96875-3.765625c20.570312-36.46875 59.164062-59.054687 101.03125-59.128906 61.800781 0 116 57.945312 116 124 0 153.40625-194.617188 266.6875-224 282.902344zm0 0"
+        />
+      </symbol>
+    </svg>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
