@@ -776,7 +776,7 @@
   right: 0;
   background-color: #fff;
   width: 100%;
-  height: 100%; }
+  height: 200%; }
   .modal__finish--active {
     display: block;
     z-index: 2;
@@ -785,9 +785,9 @@
 
 .modal__finish-inner {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, 100%); }
 
 .modal__finish-title {
   font-family: 'Raleway';
