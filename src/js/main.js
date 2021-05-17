@@ -124,12 +124,19 @@ let modalReviewClose = document.querySelector('.modal__review-exit');
 let modalReview = document.querySelector('.modal__review');
 let modalReviewContainer = document.querySelector('.modal__review-container');
 let modalReviewSend = document.querySelector('.modal__review--send');
+let modalReviewSendClose = document.querySelector('.modal__send-exit');
 
 if (!modalReviewClose) {
 
 } else {
   modalReviewClose.addEventListener('click', function () {
 
+    body.classList.remove('no-scroll');
+    modalReview.classList.add('modal__review--closed');
+    modalReviewSend.classList.remove('modal__review--send-active');
+  });
+
+  modalReviewSendClose.addEventListener('click', function () {
     body.classList.remove('no-scroll');
     modalReview.classList.add('modal__review--closed');
     modalReviewSend.classList.remove('modal__review--send-active');
