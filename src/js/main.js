@@ -1,3 +1,5 @@
+window.onload = function() { document.documentElement.style.opacity = '1'; }
+
 let navButton = document.querySelector(".menu__btn");
 let body = document.body;
 let navClose = document.querySelector('.menu__close');
