@@ -45,6 +45,7 @@ callWidget.addEventListener('click', function () {
     body.classList.remove("no-scroll");
     modalFinish.classList.remove('modal__finish--active');
     modalContainer.classList.remove('modal__container--no-scroll');
+    modalMailSend.classList.remove('modal__mail-send--active');
   });
 
   modalContainer.classList.toggle('modal__container--opened');
@@ -55,6 +56,7 @@ callWidget.addEventListener('click', function () {
     body.classList.remove("no-scroll");
     modalFinish.classList.remove('modal__finish--active');
     modalContainer.classList.remove('modal__container--no-scroll');
+    modalMailSend.classList.remove('modal__mail-send--active');
   });
 });
 
@@ -80,6 +82,8 @@ if (!modalMail) {
     modalMail.addEventListener('click', function () {
       modalMail.classList.remove('modal__mail--opened');
       modalMailContainer.classList.remove('modal__mail-container--opened');
+      modalFinish.classList.remove('modal__finish--active');
+      modalContainer.classList.remove('modal__container--no-scroll');
       modalMailSend.classList.remove('modal__mail-send--active');
       body.classList.remove('no-scroll');
     });
@@ -87,6 +91,8 @@ if (!modalMail) {
     modalMailClose.addEventListener('click', function () {
       modalMail.classList.remove('modal__mail--opened');
       modalMailContainer.classList.remove('modal__mail-container--opened');
+      modalFinish.classList.remove('modal__finish--active');
+      modalContainer.classList.remove('modal__container--no-scroll');
       modalMailSend.classList.remove('modal__mail-send--active');
       body.classList.remove('no-scroll');
     });
@@ -144,6 +150,7 @@ if (!modalReviewClose) {
     body.classList.remove('no-scroll');
     modalReview.classList.add('modal__review--closed');
     modalReviewSend.classList.remove('modal__review--send-active');
+    modalFinish.classList.remove('modal__finish--active');
   });
 
   modalReviewContainer.addEventListener('click', () => {
@@ -154,6 +161,7 @@ if (!modalReviewClose) {
     body.classList.remove('no-scroll');
     modalReview.classList.add('modal__review--closed');
     modalReviewSend.classList.remove('modal__review--send-active');
+    modalFinish.classList.remove('modal__finish--active');
   });
 }
 
