@@ -110,9 +110,15 @@ var modalReviewClose = document.querySelector('.modal__review-exit');
 var modalReview = document.querySelector('.modal__review');
 var modalReviewContainer = document.querySelector('.modal__review-container');
 var modalReviewSend = document.querySelector('.modal__review--send');
+var modalReviewSendClose = document.querySelector('.modal__send-exit');
 
 if (!modalReviewClose) {} else {
   modalReviewClose.addEventListener('click', function () {
+    body.classList.remove('no-scroll');
+    modalReview.classList.add('modal__review--closed');
+    modalReviewSend.classList.remove('modal__review--send-active');
+  });
+  modalReviewSendClose.addEventListener('click', function () {
     body.classList.remove('no-scroll');
     modalReview.classList.add('modal__review--closed');
     modalReviewSend.classList.remove('modal__review--send-active');
