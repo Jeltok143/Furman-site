@@ -7,6 +7,7 @@ let container = document.querySelector('.container');
 let navMenu = document.querySelector(".menu");
 let modalFinish = document.querySelector('.modal__finish');
 let modalContainer = document.querySelector('.modal__container');
+let modalMailSend = document.querySelector('.modal__mail-send');
 
 navButton.addEventListener("click", function () {
 
@@ -79,12 +80,14 @@ if (!modalMail) {
     modalMail.addEventListener('click', function () {
       modalMail.classList.remove('modal__mail--opened');
       modalMailContainer.classList.remove('modal__mail-container--opened');
+      modalMailSend.classList.remove('modal__mail-send--active');
       body.classList.remove('no-scroll');
     });
 
     modalMailClose.addEventListener('click', function () {
       modalMail.classList.remove('modal__mail--opened');
       modalMailContainer.classList.remove('modal__mail-container--opened');
+      modalMailSend.classList.remove('modal__mail-send--active');
       body.classList.remove('no-scroll');
     });
   });
@@ -115,6 +118,7 @@ if (!modalMailMobile) {
     modalMailClose.addEventListener('click', function () {
       modalMail.classList.remove('modal__mail--opened');
       modalMailContainer.classList.remove('modal__mail-container--opened');
+      modalMailSend.classList.remove('modal__mail-send--active');
       body.classList.remove('no-scroll');
     });
   });
@@ -225,7 +229,13 @@ function validateForms(selector, rules) {
       modalFinish.classList.add('modal__finish--active');
       body.classList.add('no-scroll');
       modalContainer.classList.add('modal__container--no-scroll');
-      modalReviewSend.classList.add('modal__review--send-active');
+      modalMailSend.classList.add('modal__mail-send--active');
+
+      if (!modalReviewSend) {
+        
+      } else {
+        modalReviewSend.classList.add('modal__review--send-active');
+      }
     }
   });
 }
