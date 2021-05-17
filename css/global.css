@@ -20,6 +20,17 @@
   font-style: normal; }
 
 html {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 8 & 9 */
+  filter: alpha(opacity=0);
+  /* newer IE */
+  -moz-opacity: 0;
+  /* Older than Firefox 0.9 */
+  -khtml-opacity: 0;
+  /* Safari 1.x (pre WebKit) */
+  opacity: 0;
+  /* (modern browsers) initially sets nothing displayed on page */
+  transition: opacity .5s;
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }

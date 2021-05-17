@@ -6,6 +6,10 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+window.onload = function () {
+  document.documentElement.style.opacity = '1';
+};
+
 var navButton = document.querySelector(".menu__btn");
 var body = document.body;
 var navClose = document.querySelector('.menu__close');
