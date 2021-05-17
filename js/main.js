@@ -46,6 +46,7 @@ callWidget.addEventListener('click', function () {
     body.classList.remove("no-scroll");
     modalFinish.classList.remove('modal__finish--active');
     modalContainer.classList.remove('modal__container--no-scroll');
+    modalMailSend.classList.remove('modal__mail-send--active');
   });
   modalContainer.classList.toggle('modal__container--opened');
   modalClose.addEventListener('click', function () {
@@ -54,6 +55,7 @@ callWidget.addEventListener('click', function () {
     body.classList.remove("no-scroll");
     modalFinish.classList.remove('modal__finish--active');
     modalContainer.classList.remove('modal__container--no-scroll');
+    modalMailSend.classList.remove('modal__mail-send--active');
   });
 });
 var modalMail = document.querySelector('.white__button');
@@ -73,12 +75,16 @@ if (!modalMail) {} else {
     modalMail.addEventListener('click', function () {
       modalMail.classList.remove('modal__mail--opened');
       modalMailContainer.classList.remove('modal__mail-container--opened');
+      modalFinish.classList.remove('modal__finish--active');
+      modalContainer.classList.remove('modal__container--no-scroll');
       modalMailSend.classList.remove('modal__mail-send--active');
       body.classList.remove('no-scroll');
     });
     modalMailClose.addEventListener('click', function () {
       modalMail.classList.remove('modal__mail--opened');
       modalMailContainer.classList.remove('modal__mail-container--opened');
+      modalFinish.classList.remove('modal__finish--active');
+      modalContainer.classList.remove('modal__container--no-scroll');
       modalMailSend.classList.remove('modal__mail-send--active');
       body.classList.remove('no-scroll');
     });
@@ -126,6 +132,7 @@ if (!modalReviewClose) {} else {
     body.classList.remove('no-scroll');
     modalReview.classList.add('modal__review--closed');
     modalReviewSend.classList.remove('modal__review--send-active');
+    modalFinish.classList.remove('modal__finish--active');
   });
   modalReviewContainer.addEventListener('click', function () {
     event.stopPropagation();
@@ -134,6 +141,7 @@ if (!modalReviewClose) {} else {
     body.classList.remove('no-scroll');
     modalReview.classList.add('modal__review--closed');
     modalReviewSend.classList.remove('modal__review--send-active');
+    modalFinish.classList.remove('modal__finish--active');
   });
 } // SMOOTH SCROOL TO TOP FROM BOTTOM
 
