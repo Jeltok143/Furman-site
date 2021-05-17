@@ -300,12 +300,8 @@
     padding: 1.1rem;
   }
 
-  @media (max-width: (768px)) {
-    
-  }
-
   @media (max-width: (499px)) {
-    
+    margin-bottom: 1rem;
   }
 
   &::placeholder {
@@ -395,7 +391,7 @@
   }
 
   @media (max-width: 499px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 

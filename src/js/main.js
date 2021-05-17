@@ -125,6 +125,7 @@ if (!modalMailMobile) {
       modalMail.classList.remove('modal__mail--opened');
       modalMailContainer.classList.remove('modal__mail-container--opened');
       modalMailSend.classList.remove('modal__mail-send--active');
+      modalFinish.classList.remove('modal__finish--active');
       body.classList.remove('no-scroll');
     });
   });
