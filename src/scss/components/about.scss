@@ -19,7 +19,17 @@
   }
 
   & > ul {
-    position: fixed;
+    position: absolute;
+  }
+}
+
+.about__nav-page {
+
+  &--topped {
+    position: fixed !important;
+    top: 50px;
+    transition: transform .5s linear;
+    transform: translateY(20px);
   }
 }
 

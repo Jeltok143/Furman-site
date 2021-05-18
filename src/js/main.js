@@ -344,3 +344,26 @@ if (!document.querySelector('.catalog__choice-select4')) {
 
   siteSelect();
 }
+
+// About brand block UP 
+
+let footerHeight = document.querySelector('.footer');
+let aboutNavPage = document.querySelector('.about__nav-page');
+
+window.onscroll = function (e) {
+
+
+  if (window.scrollY >= 250) {
+    aboutNavPage.classList.add('about__nav-page--topped');
+  }
+
+  if (window.scrollY >= 2800) {
+    aboutNavPage.classList.remove('about__nav-page--topped');
+  } else if (window.scrollY < 2500) {
+    aboutNavPage.classList.add('about__nav-page--topped');
+  }
+
+  if (window.scrollY <= 100) {
+    aboutNavPage.classList.remove('about__nav-page--topped');
+  }
+};
