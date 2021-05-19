@@ -2951,7 +2951,6 @@
 .favorites__card-item {
   position: relative;
   margin-bottom: 3.5rem;
-  margin-left: 1rem;
   margin-right: 1rem;
   width: calc(33.33333% - 20px); }
   @media (max-width: 1199px) {
