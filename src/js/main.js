@@ -375,17 +375,20 @@ window.onscroll = function (e) {
 //Favourites deleting items
 
 let favouriteCards = document.querySelector('.favorites__cards');
+let length = document.querySelectorAll('.favorites__card-item').length;
 
-if (!favouriteCards) {
+document.querySelector('.favourite__count').textContent = length;
 
-} else {
+favouriteCards.addEventListener('click', (event) => {
+  let favouriteCardsItem = document.querySelector('.favorites__card-item');
+  if (event.target.classList.contains('favorite__delete-btn')) {
+    let length = document.querySelectorAll('.favorites__card-item').length
+    length = length - 1
+    document.querySelector('.favourite__count').textContent = length;
 
-  favouriteCards.addEventListener('click', (event) => {
-    let favouriteCardsItem = document.querySelector('.favorites__card-item');
 
-    if (event.target.classList.contains('favorite__delete-btn')) {
-      favouriteCardsItem.parentNode.removeChild(favouriteCardsItem);
-    }
-  });
+    favouriteCardsItem.remove(favouriteCardsItem);
 
-}
+    
+  }
+});

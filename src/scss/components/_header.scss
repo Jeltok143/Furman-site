@@ -140,13 +140,10 @@
 }
 
 .header__buttons-icon {
+  position: relative;
   height: 20px;
   width: 20px;
   transition: fill .2s linear;
-
-  &:hover {
-    fill: gray;
-  }
 
   @media (max-width: (991px)) {
     height: 15px;
