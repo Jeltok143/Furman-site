@@ -352,18 +352,40 @@ let aboutNavPage = document.querySelector('.about__nav-page');
 
 window.onscroll = function (e) {
 
-
-  if (window.scrollY >= 250) {
-    aboutNavPage.classList.add('about__nav-page--topped');
+  if (!aboutNavPage) {
+    
+  } else {
+    if (window.scrollY >= 250) {
+      aboutNavPage.classList.add('about__nav-page--topped');
+    }
+  
+    if (window.scrollY >= 2800) {
+      aboutNavPage.classList.remove('about__nav-page--topped');
+    } else if (window.scrollY < 2500) {
+      aboutNavPage.classList.add('about__nav-page--topped');
+    }
+  
+    if (window.scrollY <= 100) {
+      aboutNavPage.classList.remove('about__nav-page--topped');
+    }
   }
 
-  if (window.scrollY >= 2800) {
-    aboutNavPage.classList.remove('about__nav-page--topped');
-  } else if (window.scrollY < 2500) {
-    aboutNavPage.classList.add('about__nav-page--topped');
-  }
-
-  if (window.scrollY <= 100) {
-    aboutNavPage.classList.remove('about__nav-page--topped');
-  }
 };
+
+//Favourites deleting items
+
+let favouriteCards = document.querySelector('.favorites__cards');
+
+if (!favouriteCards) {
+
+} else {
+
+  favouriteCards.addEventListener('click', (event) => {
+    let favouriteCardsItem = document.querySelector('.favorites__card-item');
+
+    if (event.target.classList.contains('favorite__delete-btn')) {
+      favouriteCardsItem.parentNode.removeChild(favouriteCardsItem);
+    }
+  });
+
+}
